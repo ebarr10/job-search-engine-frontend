@@ -1,0 +1,24 @@
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 8px 12px;
+  text-align: left;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.column-header {
+  cursor: "pointer";
+  user-select: "none";
+}

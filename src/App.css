@@ -1,0 +1,79 @@
+.searched-jobs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.job-block {
+  background-color: #f9f9f9;
+  /* Light gray background */
+  border-radius: 8px;
+  /* Rounded corners */
+  padding: 20px;
+  /* Padding inside the block */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  margin: 20px;
+  /* Spacing outside the block */
+  max-width: 500px;
+  /* Maximum width */
+  margin-left: auto;
+  margin-right: auto;
+  /* Centers the block */
+  font-family: 'Arial', sans-serif;
+  /* Clean font */
+  color: #333;
+  /* Dark text */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  /* Smooth hover effect */
+}
+
+.job-block:hover {
+  transform: translateY(-5px);
+  /* Moves the block up a little on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  /* Darker shadow on hover */
+}
+
+.job-block h2 {
+  font-size: 1.5rem;
+  /* Larger font for the header */
+  color: #444;
+  /* Slightly lighter header color */
+  margin-bottom: 10px;
+  /* Spacing below the header */
+}
+
+.job-block p {
+  font-size: 1rem;
+  /* Standard text size */
+  line-height: 1.5;
+  /* Increase line height for readability */
+  margin-bottom: 15px;
+  /* Spacing between paragraphs */
+}
+
+.description {
+  max-height: 300px;
+  /* Adjust the max height as needed */
+  overflow-y: auto;
+  /* Adds a vertical scrollbar when content overflows */
+  padding: 10px;
+  border: 1px solid #ccc;
+  /* Optional: adds a border around the block */
+  background-color: #f9f9f9;
+  /* Optional: adds a background color */
+}
+
+.company-information,
+.job-specifics,
+.job-information {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.main-component {
+  display: flex;
+  justify-content: center;
+}
