@@ -46,7 +46,7 @@ export function PaginatedTable({ filteredData, rowsPerPage = 5 }) {
                 <a href={row.company_url || "#"}>{row.company}</a>
               </td>
               <td>{row.location || "Check Job Posting"}</td>
-              <td>{row.is_remote ? "True" : "False"}</td>
+              <td>{row.is_remote ? "Yes" : "No"}</td>
               <td>{row.job_type || "fulltime"}</td>
               <td>{row.date_posted || "N/A"}</td>
             </tr>
